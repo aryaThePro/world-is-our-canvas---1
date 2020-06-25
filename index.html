@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="matter.js"></script>
+    <meta charset="utf-8">
+    <title>Multiplayer Game</title>
+
+    <script src="p5.play.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-database.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAT3bFcPnFjW8zJrulH-8Gw7YI2phBTiuM",
+    authDomain: "world-is-our-canvas-d27f7.firebaseapp.com",
+    databaseURL: "https://world-is-our-canvas-d27f7.firebaseio.com",
+    projectId: "world-is-our-canvas-d27f7",
+    storageBucket: "world-is-our-canvas-d27f7.appspot.com",
+    messagingSenderId: "13858506017",
+    appId: "1:13858506017:web:f12030c5fb009541b06a60"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+ 
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <div id="canvascontainer"></div>
+
+    <p>
+      <button id="saveButton">save</button>
+    </p>
+
+    <script src="sketch.js"></script>
+    
+  </body>
+</html>
